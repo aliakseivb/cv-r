@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto.ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url("../fonts/Robotobold.ttf");
+  font-weight: 300;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  /*font-size: 16px;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background-color: #d2d2d2;
+}
+
+.back {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.back.show {
+  z-index: 2;
+  background: rgba(35, 35, 35, 0.88);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 25px 0;
+  background-color: #bbbebb;
+  box-shadow: 0 3px 7px 0 rgba(0 0 0 / .8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header.shadow {
+  transition: .3s linear;
+  z-index: 2;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 10px;
+  position: relative;
+}
+
+.logo {
+  width: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.navigation {
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.menu-item {
+  margin-left: 25px;
+}
+
+.item {
+  font-family: RobotoBold, sans-serif;
+  font-size: 22px;
+  color: #30331c;
+  text-decoration: none;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.item:hover {
+  color: #ffffff;
+}
+
+.close {
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/close.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 35px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.line {
+  width: 100%;
+  height: 4px;
+  min-height: 4px;
+  border-radius: 5px;
+  background: #4c4c4c;
+}
+
+.line:nth-child(2) {
+  margin: 6px 0;
+}
+
+.burger:hover .line {
+  background: #885454;
+}
+
+.main {
+  flex-grow: 1;
+  padding-top: 100px;
+}
+
+.main .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 0 10px;
+}
+
+.main-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 70px;
+  border-bottom: 10px solid #9b9b97;
+}
+
+.present {
+  color: #885454;
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: 10px;
+}
+
+.name {
+  font-family: RobotoBold, sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.orient {
+  font-family: RobotoBold, sans-serif;
+  font-size: 30px;
+  color: #9b9b97;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  left: 50px;
+}
+
+.main-image {
+  width: 30%;
+  min-width: 30%;
+  margin-left: 150px;
+  box-shadow: inset 0 0 20px 3px rgb(48 51 28);
+  border-radius: 50%;
+  border: 1px solid #885454;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.main-image img {
+  width: 100%;
+}
+
+.main-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
+  padding: 20px 0;
+}
+
+.section {
+  min-width: 100%;
+  padding: 30px;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+}
+
+.section:hover {
+  background-color: #bbbebb;
+  transition: .2s;
+}
+
+.title {
+  font-family: RobotoBold, sans-serif;
+  font-size: 28px;
+  font-weight: bolder;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+
+span {
+  font-weight: 700;
+}
+
+.info {
+  list-style: none;
+  font-size: 20px;
+  color: #282424;
+}
+
+.info li{
+  margin-bottom: 5px;
+}
+
+.extra-title {
+  display: inline-block;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #282424;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.info-link {
+  text-indent: 20px;
+}
+
+.info a,
+.info-link a {
+  color: #885454;
+}
+
+.extra-info {
+  list-style: none;
+}
+
+.extra-info .info-link a {
+  text-decoration: none;
+}
+
+.extra-info .info-link a:hover {
+  color: #ffffff;
+}
+
+.footer {
+  background-color: #a9a7a7;
+}
+
+.footer .container {
+  padding: 30px 10px;
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+}
+
+.footer .container a {
+  text-decoration: none;
+  color: #885454;
+  margin-left: 40px;
+  position: relative;
+  top: 3px;
+}
+
+.hidden {
+  overflow: hidden;
+}
