@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   //todo анимация хедера
   window.onscroll = function () {
-    if (window.scrollY > 1) {
+    if (window.scrollY > 100) {
       header.classList.add('shadow');
     } else {
       header.classList.remove('shadow');
