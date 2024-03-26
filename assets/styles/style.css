@@ -259,6 +259,9 @@ span {
   margin-bottom: 5px;
   font-weight: 700;
 }
+.extra-title.project{
+  margin: 10px 0;
+}
 
 .extra-title.add {
   font-size: 20px;
