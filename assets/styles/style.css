@@ -248,7 +248,7 @@ span {
   color: #282424;
 }
 
-.info li{
+.info li {
   margin-bottom: 5px;
 }
 
@@ -260,13 +260,15 @@ span {
   font-weight: 700;
 }
 
-.extra-title.add{
+.extra-title.add {
   font-size: 20px;
   margin: 20px 0 10px;
 }
-.extra-title.add + div{
+
+.extra-title.add + div {
   font-size: 20px;
 }
+
 .info-link {
   text-indent: 20px;
   margin-bottom: 5px;

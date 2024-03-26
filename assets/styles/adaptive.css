@@ -219,6 +219,15 @@
     font-size: 14px;
   }
 
+  .extra-title.add {
+    font-size: 14px;
+    margin: 20px 0 10px;
+  }
+
+  .extra-title.add + div {
+    font-size: 14px;
+  }
+
   .footer .container {
     padding: 10px 10px;
     font-size: 22px;
