@@ -260,6 +260,13 @@ span {
   font-weight: 700;
 }
 
+.extra-title.add{
+  font-size: 20px;
+  margin: 20px 0 10px;
+}
+.extra-title.add + div{
+  font-size: 20px;
+}
 .info-link {
   text-indent: 20px;
   margin-bottom: 5px;
