@@ -152,7 +152,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
 
   .header .container {
     justify-content: space-evenly;
@@ -241,7 +241,7 @@
   }
 
   .present {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 30px;
   }
 
@@ -276,11 +276,6 @@
 
   .main-header {
     padding: 20px 5px;
-  }
-
-  .present {
-    letter-spacing: 2px;
-    line-height: 30px;
   }
 
   .name {

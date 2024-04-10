@@ -5,14 +5,20 @@
 }
 
 @font-face {
-  font-family: Roboto;
-  src: url("../fonts/Roboto.ttf");
-  font-weight: 100;
+  font-family: MontserratRegular;
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: RobotoBold;
-  src: url("../fonts/Robotobold.ttf");
+  font-family: MontserratMedium;
+  src: url("../fonts/Montserrat-Medium.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: MontserratSemiBold;
+  src: url("../fonts/Montserrat-SemiBold.ttf");
   font-weight: 300;
 }
 
@@ -21,7 +27,7 @@ html {
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: MontserratRegular, sans-serif;
   /*font-size: 16px;*/
   display: flex;
   flex-direction: column;
@@ -99,12 +105,13 @@ body {
 }
 
 .item {
-  font-family: RobotoBold, sans-serif;
+  font-family: MontserratRegular, sans-serif;
   font-size: 22px;
   color: #30331c;
   text-decoration: none;
   transition: .2s;
   cursor: pointer;
+  letter-spacing: 1px;
 }
 
 .item:hover {
@@ -175,18 +182,18 @@ body {
   color: #885454;
   font-size: 32px;
   font-weight: 300;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
 }
 
 .name {
-  font-family: RobotoBold, sans-serif;
+  font-family: MontserratSemiBold, sans-serif;
   font-size: 40px;
   text-transform: uppercase;
   margin-bottom: 50px;
 }
 
 .orient {
-  font-family: RobotoBold, sans-serif;
+  font-family: MontserratMedium, sans-serif;
   font-size: 30px;
   color: #9b9b97;
   display: flex;
@@ -231,7 +238,7 @@ body {
 }
 
 .title {
-  font-family: RobotoBold, sans-serif;
+  font-family: MontserratMedium, sans-serif;
   font-size: 28px;
   font-weight: bolder;
   padding-left: 50px;
